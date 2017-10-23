@@ -336,6 +336,8 @@ export default class Page extends React.Component {
 
 components/elements.js
 ``` jsx
+import styled from 'styled-components'
+
 export const InputText = styled.input`
   background-color: white;
   color: #222;
@@ -573,6 +575,8 @@ Go back to the preview at [http://localhost:3000/mixtape](http://localhost:3000/
 Our effort so far have been on the user interaction side. Now, we're going to make the app really work. We are going to connect to a backend that is already available at. 
 
 [https://us-central1-mehsurvey-29210.cloudfunctions.net/getSongs](https://us-central1-mehsurvey-29210.cloudfunctions.net/getSongs)
+
+The url accepts parameter q for a search keyword. For example [https://us-central1-mehsurvey-29210.cloudfunctions.net/getSongs?=lucy](https://us-central1-mehsurvey-29210.cloudfunctions.net/getSongs?q=lucy)
 
 ### 5.1 Listen to component events and mutate the state
 
